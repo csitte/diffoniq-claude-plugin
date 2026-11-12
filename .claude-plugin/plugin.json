@@ -21,5 +21,8 @@
     "backup",
     "windows"
   ],
-  "icon": ".claude-plugin/icon.png"
+  "icon": ".claude-plugin/icon.png",
+  "privacyPolicyUrl": "https://diffoniq.com/privacy/",
+  "supportUrl": "https://diffoniq.com/support/",
+  "documentationUrl": "https://diffoniq.com/help/automation.htm"
 }
