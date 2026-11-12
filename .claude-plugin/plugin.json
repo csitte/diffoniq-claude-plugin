@@ -1,0 +1,15 @@
+{
+  "name": "diffoniq",
+  "displayName": "Diffoniq",
+  "version": "2.4.0",
+  "description": "Compare folders, archives and text files on Windows with Diffoniq, and preview what a folder sync would copy or delete. Three read-only tools; needs Diffoniq installed.",
+  "author": {
+    "name": "C.Sitte Softwaretechnik e.U.",
+    "email": "support@diffoniq.com",
+    "url": "https://diffoniq.com/"
+  },
+  "homepage": "https://diffoniq.com/guides/mcp-server/",
+  "repository": "https://github.com/csitte/diffoniq-claude-plugin",
+  "license": "MIT",
+  "keywords": ["diff", "compare", "folder-compare", "archive", "zip", "sync", "backup", "windows"]
+}

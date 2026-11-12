@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "diffoniq": {
+      "command": "npx",
+      "args": ["-y", "diffoniq-mcp@2.4.0"]
+    }
+  }
+}
