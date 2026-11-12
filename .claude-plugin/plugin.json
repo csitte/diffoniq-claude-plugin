@@ -11,5 +11,15 @@
   "homepage": "https://diffoniq.com/guides/mcp-server/",
   "repository": "https://github.com/csitte/diffoniq-claude-plugin",
   "license": "MIT",
-  "keywords": ["diff", "compare", "folder-compare", "archive", "zip", "sync", "backup", "windows"]
+  "keywords": [
+    "diff",
+    "compare",
+    "folder-compare",
+    "archive",
+    "zip",
+    "sync",
+    "backup",
+    "windows"
+  ],
+  "icon": ".claude-plugin/icon.png"
 }
