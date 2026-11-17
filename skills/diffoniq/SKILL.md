@@ -1,17 +1,18 @@
 ---
 name: diffoniq
-description: Compare folders, archives (ZIP, 7z, nested) and text files on Windows with Diffoniq, and preview what a folder sync would copy or delete. Use when the user asks what changed between two folders, releases, backups or archives, whether a backup is complete, which lines differ between two files, or what a mirror/backup run would do. Needs the Diffoniq MCP server (tools compare_tree, compare_file, sync_preview).
+description: Compare folders, archives (ZIP, 7z, nested) and text files on Windows with Diffoniq, and preview what a folder sync would copy or delete. Use when the user asks what changed between two folders, releases, backups or archives, whether a backup is complete, which lines differ between two files, or what a mirror/backup run would do, or to read a Word, Excel or PowerPoint file as text. Needs the Diffoniq MCP server (tools compare_tree, compare_file, convert_file, sync_preview).
 ---
 
 # Comparing with Diffoniq
 
-Diffoniq's MCP server offers three read-only tools. None of them changes a
+Diffoniq's MCP server offers four read-only tools. None of them changes a
 file; `sync_preview` only shows a plan.
 
 | Question | Tool |
 |---|---|
 | What changed between these two folders, releases or archives? Is the backup complete? | `compare_tree` |
 | Which lines differ between these two files? | `compare_file` |
+| What does this Word, Excel or PowerPoint file say? | `convert_file` |
 | What would copying/mirroring this folder onto that one do? What would it delete? | `sync_preview` |
 
 ## Rules
@@ -74,7 +75,9 @@ file; `sync_preview` only shows a plan.
   `ignore_trailing_blanks` of `compare_file` are off unless set. The answer's
   `options` list says what was in effect.
 - `compare_file` cuts a line text at 400 characters (`leftChars`/`rightChars`
-  give the full length). A binary file has a few info lines (size, hash,
+  give the full length). `convert_file` cuts a paragraph only past 2000
+  (`chars`); name the sheet and row, the slide or the section it gives, not
+  the line number, and page on with `offset` as its hint says. A binary file has a few info lines (size, hash,
   first differing offset) instead of text; an image has no lines at all.
 
 ## Typical calls
